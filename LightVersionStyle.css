@@ -1,0 +1,97 @@
+h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: darkblue;
+}
+#anchor{
+    left:1100px;
+    top: 50px;
+    position:fixed;
+}
+#common{
+    left:50px;
+    top:150px;
+    position:fixed;
+}
+#button1{
+    left:90px; 
+    top:400px;
+    position:fixed;
+}
+
+#lemon{
+    left:50px;
+    top:450px;
+    position:fixed;
+}
+
+#button2{
+    left:90px;
+    top:700px;
+    position: fixed;
+}
+
+#sole{
+    left:100px;
+    top:190px;
+    position:fixed;
+}
+#button3{
+    left:290px; 
+    top:400px;
+    position:fixed;
+}
+#wedge{
+    top: 150px; 
+    left: 250px;
+    position: fixed;
+}
+#button4{
+    left:290px;
+    top:700px;
+    position: fixed;
+}
+#petrale{
+    top: 450px;
+    left:250px;
+    position: fixed;
+}
+#numFish{
+    font-size: 30px;
+    top: 500px;
+    left: 500px;
+    position: fixed;
+    
+}
+
+#English{
+    top: 150px;
+    left:450px;
+    position: fixed;
+}
+h4{
+    left:800px;
+    top:400px;
+    position:fixed;
+    font-size: 30px;
+    font-weight: bold;
+    color:gold;
+}
+
+#button5{
+    top:400px;
+    left:490px;
+    position:fixed;
+}
+body{
+    background-image: url('Images/ocean.jpeg');
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

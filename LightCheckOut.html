@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+   <head>
+       <meta charset="utf-8">
+       <title>Home </title>
+       <link rel="stylesheet" type="text/css" href="LightCheckOutStyle.css">
+       <h1>
+           CHECK OUT
+        </h1>
+           
+           
+       
+      <body>
+        <a href="LightVersion.html"><button style="background-color:gold; height:30px;width:50px">Back</button></a>
+        <div id ="cart">
+        <img src = "Images/cart.gif" alt ="lemon" width="200" height="150">
+        </div>
+          <h2> 
+            Items in cart
+          </h2>
+          
+        <div id ="list">
+            Common fish:  <span id="commonFish"></span>
+            <br>
+            Lemon fish:   <span id="lemonFish"></span>
+            <br>
+            Wedge fish:   <span id="wedgeFish"></span>
+            <br>
+            Petrale fish: <span id="petraleFish"></span>
+            <br>
+            English fish: <span id="englishFish"></span>
+           
+      
+        </div>
+        <div id ="payment">
+            <h3>
+                Payment Information
+            </h3>
+             <form>
+                <input type ="text"> Card number
+            </form>
+            <form>
+                <input type ="text"> Name on card
+            </form>
+            <form>
+                <input type ="text"> Security code
+            </form>
+        </div>
+        <div id ="shipping">
+            <h3>
+                Shipping Information
+            </h3>
+            <form>
+                <input type ="text"> Address
+            </form>
+        </div>
+        <div id ="added">
+            <h3>
+                Added fees: 
+                <br>
+                $3 for shipping
+                <br>
+                $3 for packaging 
+                <br>
+                $3 for tax
+                <br>  
+                Total: $ <span id="total"></span>
+            </h3>
+        </div>
+      
+        <div id = "agree">
+          <input type = "checkbox" name ="affirmative" value="I agree"> I agree to be billed for the set price
+          <br>
+          <input type = "checkbox" name ="affirmative" value="I agree">I accept the terms and conditions <a href="LightVersionOfTerms.html">(Terms and Conditions)</a>
+        </div>
+        <div id ="submit">
+            <a href="Sucess.html"><button style="background-color:gold; height:70px;width:100px" value ="increment" onclick="getTotal()"> SUBMIT </button></a>
+        </div>
+        <script type="text/javascript">
+            var totalFees =0;
+            var commonFish = sessionStorage.getItem("commonFish");
+            document.getElementById("commonFish").innerHTML = commonFish;
+            var lemonFish = sessionStorage.getItem("lemonFish");
+            document.getElementById("lemonFish").innerHTML = lemonFish;
+            var wedgeFish = sessionStorage.getItem("wedgeFish");
+            document.getElementById("wedgeFish").innerHTML = wedgeFish;
+            var petraleFish = sessionStorage.getItem("petraleFish");
+            document.getElementById("petraleFish").innerHTML = petraleFish;
+            var englishFish = sessionStorage.getItem("englishFish");
+            document.getElementById("englishFish").innerHTML = englishFish;
+            var total = sessionStorage.getItem("total");
+            total=parseInt(total)+parseInt(9);
+            document.getElementById("total").innerHTML = total;
+             
+            
+            
+            
+
+        </script>
+         
+      </body>
+   </head>

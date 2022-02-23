@@ -1,0 +1,33 @@
+h1{
+    font-family: cursive;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: darkblue;
+}
+#wrapper{
+   
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;;
+    top:500px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: gold;
+    height: 250px;
+    
+        
+    
+}
+body{
+    background-image: url('Images/ocean.jpeg');
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+   <head>
+       <meta charset="utf-8">
+       <title>Home </title>
+       <link rel="stylesheet" type="text/css" href="DarkVersionStyle.css">
+       <h1>
+           Cob's Seafood Emporium 
+           
+           <a href="DarkCheckOut.html"><button style="background-color:gold; height:50px;width:50px" >Cart</button></a>
+        </h1>
+      
+   </head>
+   
+   <body>
+    
+    <div id="anchor">
+         <img src = "Images/anchor.gif" alt ="sole" width="150" height="150">
+    </div>
+    <div id ="sale">
+        <img src = "Images/sale.gif" alt ="sole" width="200" height="200">
+    </div>
+    <h4>
+        All fish are selling for only $8!
+    </h4>
+    <div id="common">
+       <h3>Common Sole Fish</h3>
+       <p> Flaky! Great with butter! </p>
+       <img src = "Images/common.jpeg" alt ="sole" width="150" height="150">
+    </div>
+    <div id="button1">
+        <button style="background-color:gold; height:30px;width:70px" value ="increment" onclick="button1()">BUY <span id="commonFish"></span></button>
+    
+    </div>
+    <div id="lemon">
+        <h3>Lemon Sole Fish</h3>
+        <p> The freshest fish! </p>
+        <img src = "Images/sole.jpeg" alt ="lemon" width="150" height="150">
+    </div>
+    <div id="button2">
+        <button style="background-color:gold; height:30px;width:70px" value ="increment" onclick="button2()">BUY <span id="lemonFish"></span></button>
+    </div>
+    <div id ="wedge">
+        <h3>Wedge Sole Fish </h3>
+        <p> The best flatfish! </p>
+        <img src = "Images/Wedge.jpeg" alt ="sole" width="150" height="150">
+    </div>
+    <div id ="button3">
+        <button style="background-color:gold; height:30px;width:70px" value ="increment" onclick="button3()">BUY <span id="wedgeFish"></span></button>
+       
+    </div>
+    <div id ="petrale">
+        <h3>Petrale Sole Fish </h3>
+        <p> A mild and sweet taste! </p>
+        <img src = "Images/Petrale.jpeg" alt ="sole" width="150" height="150">
+    </div>
+    <div id ="button4"> 
+    
+        <button style="background-color:gold; height:30px;width:70px" value ="increment" onclick="button4()">BUY <span id="petraleFish"></span></button>
+        
+    </div>
+    <div id ="English">
+        <h3>English Sole Fish</h3>
+        <p>Rich and tender flavors! </p>
+        <img src = "Images/English.jpeg" alt ="sole" width="150" height="150">
+    </div>
+    <div id ="button5"> 
+        <button style="background-color:gold; height:30px;width:70px" value ="increment" onclick="button5()">BUY <span id="englishFish"></span></button>
+
+    </div>
+    <div id ="numFish">
+        Total: $<span id="total"></span>
+    </div>
+    
+   
+    <script type="text/javascript">
+        
+        var commonFish = 0;
+        var lemonFish = 0;
+        var wedgeFish = 0;
+        var englishFish = 0;
+        var petraleFish = 0;
+        var total =0;
+        sessionStorage.setItem("total",total);
+        sessionStorage.setItem("commonFish",commonFish);
+        sessionStorage.setItem("lemonFish",lemonFish);
+        sessionStorage.setItem("wedgeFish",wedgeFish);
+        sessionStorage.setItem("englishFish", englishFish);
+        sessionStorage.setItem("petraleFish", petraleFish);
+        
+
+        function button1(){
+            
+            commonFish++;
+            total=total+8;
+            document.getElementById("commonFish").innerHTML = commonFish;
+            sessionStorage.setItem("commonFish",commonFish);
+            document.getElementById("total").innerHTML = total;
+            sessionStorage.setItem("total",total);
+        }
+        function button2(){
+           
+            lemonFish++;
+            total=total+8;
+            document.getElementById("lemonFish").innerHTML = lemonFish;
+            sessionStorage.setItem("lemonFish",lemonFish);
+            document.getElementById("total").innerHTML = total;
+            sessionStorage.setItem("total",total);
+        }
+        function button3(){
+           
+            wedgeFish++;
+            total=total+8;
+            document.getElementById("wedgeFish").innerHTML = wedgeFish;
+            sessionStorage.setItem("wedgeFish",wedgeFish);
+            document.getElementById("total").innerHTML = total;
+            sessionStorage.setItem("total",total);
+           
+        }
+        function button4(){
+           
+            petraleFish++;
+            total=total+8;
+            document.getElementById("petraleFish").innerHTML = petraleFish;
+            sessionStorage.setItem("petraleFish", petraleFish);
+            document.getElementById("total").innerHTML = total;
+            sessionStorage.setItem("total",total);
+        }
+        function button5(){
+           
+           englishFish++;
+           total=total+8;
+           document.getElementById("englishFish").innerHTML = englishFish;
+           sessionStorage.setItem("englishFish", englishFish);
+           document.getElementById("total").innerHTML = total;
+           sessionStorage.setItem("total",total);
+       }
+       document.getElementById("total").innerHTML = total;
+       sessionStorage.setItem("total",total);
+
+    </script>
+
+    
+    
+ </body>
+      

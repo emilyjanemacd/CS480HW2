@@ -1,0 +1,68 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    border-style: ridge;
+    border-width: 20px;
+    border-color: gold
+}
+h2{
+    font-size: 30px;
+    text-align:  left;
+}
+#payment{
+    left:500px;
+    top:200px;
+    font-size: 20px;
+    position:fixed;
+}
+#shipping{
+    left:500px;
+    top:350px;
+    font-size: 20px;
+    position:fixed;
+}
+#cart{
+    left:1100px;
+    top: 150px;
+    position:fixed;
+}
+h4{
+    left:500px;
+    top:450px;
+    position:fixed;
+}
+#agree{
+    left: 500px;
+    top: 600px;
+    position: fixed;
+}
+#submit{
+    left:500px;
+    top:650px;
+    position:fixed;
+}
+#list{
+    text-align: center;
+    background-color: white;
+    font-size: 20px;;
+    top:500px;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: gold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    
+}
+body{
+    background-image: url('Images/ocean.jpeg');
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
